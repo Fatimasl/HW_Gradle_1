@@ -18,13 +18,13 @@ public class CashbackHackServiceTest {
     }
 
     @org.junit.Test
-    public void shouldReturn1000ThenAmount5000(){
+    public void shouldReturn0ThenAmount5000(){
 
         CashbackHackService service = new CashbackHackService();
 
         int amount = 5000;
         int actual = service.remain(amount);
-        int expected = 1000;
+        int expected = 0;
 
         assertEquals(actual, expected);
 
